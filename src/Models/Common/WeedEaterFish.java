@@ -24,10 +24,16 @@ public abstract class WeedEaterFish extends Fish implements IWeedEater {
 
     @Override
     protected ILivingThing chooseMeal() {
-        ILivingThing randomWeed;
+        ISeaweed[] seaweeds = getEnvironment().getSeaweeds();
+        if(seaweeds.length <= 0) {
+            System.out.printf("%s : Il n'y a rien à manger ici...", this.getName());
+            System.out.println();
+            return null;
+        }
+        ISeaweed randomWeed;
         do {
-            int randomIndex = CustomRNG.GetRandomIndex(getEnvironment().getSeaweeds().length);
-            randomWeed = getEnvironment().getSeaweeds()[randomIndex];
+            int randomIndex = CustomRNG.GetRandomIndex(seaweeds.length);
+            randomWeed = seaweeds[randomIndex];
         } while (randomWeed == this || !randomWeed.isAlive());
         return randomWeed;
     }

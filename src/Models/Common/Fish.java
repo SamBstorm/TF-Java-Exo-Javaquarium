@@ -62,20 +62,17 @@ public abstract class Fish extends LivingThing implements IFish{
                 System.out.printf("%s : J'ai faim!", this.getName());
                 System.out.println();
                 ILivingThing meal = this.chooseMeal();
-                if (meal instanceof IFish && ((IFish)meal).getIsBusy()){
-                    System.out.printf("%s : ma proie est déjà prise...", this.getName());
-                    System.out.println();
-                    return;
-                } else if (meal instanceof IFish) {
-                    ((IFish)meal).setIsBusy(true);
-                }
-                this.eats(meal);
-
+                if(meal != null) this.eats(meal);
             }
             else {
                 System.out.printf("%s : Je suis en forme!", this.getName());
                 System.out.println();
                 IFish partner = choosePartner();
+                if(partner == null){
+                    System.out.printf("%s : Je me sens seule...", this.getName());
+                    System.out.println();
+                    return;
+                }
                 if (!partner.getIsBusy() && this.getClass().equals(partner.getClass())){
                     if (this instanceof IOpportunistHerma)
                         switch (partner.getGender()){
@@ -104,12 +101,18 @@ public abstract class Fish extends LivingThing implements IFish{
     }
     protected abstract ILivingThing chooseMeal();
     protected IFish choosePartner(){
-        ILivingThing randomFish;
+        IFish[] fishes = getEnvironment().getFishes();
+        if(fishes.length <= 1) {
+            System.out.printf("%s : Il n'y a rien à manger ici...", this.getName());
+            System.out.println();
+            return null;
+        }
+        IFish randomFish;
         do {
-            int randomIndex = CustomRNG.GetRandomIndex(getEnvironment().getFishes().length);
-            randomFish = getEnvironment().getFishes()[randomIndex];
+            int randomIndex = CustomRNG.GetRandomIndex(fishes.length);
+            randomFish = fishes[randomIndex];
         } while (randomFish == this || !randomFish.isAlive());
-        return (IFish)randomFish;
+        return randomFish;
     }
 
     @Override

@@ -47,7 +47,8 @@ public class Aquarium implements IAquaEnvironment{
 
     public void addLiving(ILivingThing living){
       if(living.getEnvironment() != this) living.setEnvironment(this);
-      _population.add(living);
+        //_population.add(living);
+        _population.add(0,living);
     }
 
     public void newTurn(){
