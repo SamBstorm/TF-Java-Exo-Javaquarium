@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb6b2a9f-e04d-41d8-9a42-cc753febbb0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo-Javaquarium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Aquarium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IAquaEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IFish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IHerma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/ILivingThing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IMeatEater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IMonosexed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IOpportunistHerma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/ISeaweed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/IWeedEater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/LivingThing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/MeatEaterFish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Common/WeedEaterFish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Bar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Carp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Clownfish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Grouper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Sole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Fishes/Tuna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Handlers/CustomRNG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Seaweed.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IfXn01B4NGmMsqEIYTFb9HEIhR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Exo-Javaquarium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb6b2a9f-e04d-41d8-9a42-cc753febbb0f" name="Changes" comment="" />
+      <created>1670573774986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670573774986</updated>
+    </task>
+    <servers />
+  </component>
+</project>
